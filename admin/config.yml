@@ -7,8 +7,9 @@
 
 backend:
   name: github
-  repo: LesVoletsBleus/lesvoletsbleus    # à modifier
+  repo: LesVoletsBleus/lesvoletsbleus
   branch: main
+  base_url: https://oauth.decapcms.org
 
 # URL du site en ligne (utilisée pour les liens "Voir le site")
 site_url: https://lesvoletsbleus.pages.dev
