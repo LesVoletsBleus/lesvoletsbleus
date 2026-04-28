@@ -7,7 +7,7 @@
 
 backend:
   name: github
-  repo: VOTRE_LOGIN/lesvoletsbleus    # à modifier
+  repo: LesVoletsBleus/lesvoletsbleus    # à modifier
   branch: main
 
 # URL du site en ligne (utilisée pour les liens "Voir le site")
