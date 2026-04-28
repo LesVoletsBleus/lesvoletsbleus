@@ -1,0 +1,46 @@
+{
+  "phrase_accroche_ligne_1": "Quelques dates,",
+  "phrase_accroche_ligne_2": "à retenir.",
+  "evenements": [
+    {
+      "date_jour": "Sam.",
+      "date_complement": "Chaque semaine",
+      "titre": "Samedi, retour du marché",
+      "description": "Le chef compose son menu après son tour au marché. Une assiette différente chaque semaine, fraîche par définition.",
+      "statut": "Récurrent",
+      "couleur_statut": "orange-clair"
+    },
+    {
+      "date_jour": "31",
+      "date_complement": "Mai 2026",
+      "titre": "Fête des mères",
+      "description": "Menu spécial en quatre temps autour des produits du printemps. Service unique à 12h30. Cadeau pour chaque maman.",
+      "statut": "Sur réservation",
+      "couleur_statut": "bleu"
+    },
+    {
+      "date_jour": "21",
+      "date_complement": "Juin 2026",
+      "titre": "Fête des pères",
+      "description": "Le menu de saison signé par le chef, avec un accord mets-vins offert pour les papas. Service unique à 12h30.",
+      "statut": "Sur réservation",
+      "couleur_statut": "bleu"
+    },
+    {
+      "date_jour": "À venir",
+      "date_complement": "Automne",
+      "titre": "Soirée accord poissons & vins",
+      "description": "Un vigneron invité, cinq plats, cinq vins. Une soirée à thème pour explorer un terroir.",
+      "statut": "À venir",
+      "couleur_statut": "orange-clair"
+    },
+    {
+      "date_jour": "Sur",
+      "date_complement": "demande",
+      "titre": "Évènements privés",
+      "description": "Anniversaires, repas de famille, séminaires : la salle peut être privatisée. Contactez-nous pour étudier votre projet.",
+      "statut": "Privatisation",
+      "couleur_statut": "orange"
+    }
+  ]
+}

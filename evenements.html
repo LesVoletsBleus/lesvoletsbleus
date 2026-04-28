@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Évènements — Les Volets Bleus</title>
+    <meta name="description" content="Les rendez-vous des Volets Bleus à Fougères : Fête des mères, Fête des pères, Samedi retour du marché, soirées thématiques.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;1,400;1,500&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="evenements">
+
+    <nav class="site-nav" aria-label="Navigation principale">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">Les Volets Bleus</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="carte.html" class="nav-link">Carte</a>
+                <a href="vins.html" class="nav-link">Vins</a>
+                <a href="evenements.html" class="nav-link active">Évènements</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="reserver.html" class="nav-link nav-cta">Réserver</a>
+            </div>
+            <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="page-header-inner">
+            <p class="hero-eyebrow">— Nos rendez-vous</p>
+            <h1 class="page-title" id="evenements-title-1">Quelques dates,</h1>
+            <h1 class="page-title" id="evenements-title-2" style="margin-top: 4px;">à <em>retenir.</em></h1>
+        </div>
+    </header>
+
+    <main class="page-content wide">
+        <div id="evenements-list">
+            <p class="loading-state">Chargement des évènements…</p>
+        </div>
+
+        <p style="text-align: center; margin-top: 4rem; font-family: 'Fraunces', serif; font-style: italic; color: var(--bleu); opacity: 0.85;">
+            Pour réserver un rendez-vous :<br>
+            <a href="reserver.html" style="color: var(--orange); border-bottom: 1px solid var(--orange);">Nous contacter</a> ou
+            <a href="tel:+33244513152" style="color: var(--orange); border-bottom: 1px solid var(--orange);">02 44 51 31 52</a>
+        </p>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div>
+                    <p class="footer-name">Les Volets Bleus</p>
+                    <p class="footer-tagline">Restaurant 100 % poissons<br>au cœur de Fougères, en Bretagne.</p>
+                    <p class="footer-mama">Une des <a href="https://lesmaisonsduchateau.pages.dev">Maisons du Château</a></p>
+                </div>
+                <div>
+                    <p class="footer-col-title">Le restaurant</p>
+                    <ul class="footer-list">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="carte.html">La Carte</a></li>
+                        <li><a href="vins.html">Les Vins</a></li>
+                        <li><a href="evenements.html">Évènements</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="footer-col-title">Pratique</p>
+                    <ul class="footer-list">
+                        <li><a href="reserver.html">Réserver</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="tel:+33244513152">02 44 51 31 52</a></li>
+                        <li><a href="mailto:lesvoletsbleus.bzh@gmail.com">Nous écrire</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="year">2026</span> Les Volets Bleus · Fougères</p>
+                <p>1 place Raoul II · 35300 Fougères</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

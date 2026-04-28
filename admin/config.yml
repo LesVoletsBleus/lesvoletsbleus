@@ -1,0 +1,231 @@
+# =============================================================
+# Configuration de l'admin (Decap CMS) — Les Volets Bleus
+# =============================================================
+# IMPORTANT : remplacer "VOTRE_LOGIN" par le login GitHub
+# du compte qui héberge le site, et "lesvoletsbleus" par le
+# nom du dépôt GitHub.
+
+backend:
+  name: github
+  repo: VOTRE_LOGIN/lesvoletsbleus    # à modifier
+  branch: main
+
+# URL du site en ligne (utilisée pour les liens "Voir le site")
+site_url: https://lesvoletsbleus.pages.dev
+display_url: https://lesvoletsbleus.pages.dev
+
+# Dossier où sont stockées les images (si vous en ajoutez plus tard)
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+# Langue de l'interface
+locale: fr
+
+# =============================================================
+# COLLECTIONS — ce que le chef peut modifier
+# =============================================================
+collections:
+
+  # ---------- 1. La Carte d'été ----------
+  - name: "carte"
+    label: "🍽️ La Carte"
+    label_singular: "carte"
+    files:
+      - file: "data/carte.json"
+        name: "carte"
+        label: "Carte du moment"
+        description: "Modifiez ici les plats de la carte. Pour ajouter une nouvelle carte (Noël, automne...), demandez à un développeur de créer un nouveau fichier."
+        fields:
+          - { label: "Saison (ex: Été 2026, Automne 2026, Carte de Noël)", name: "saison", widget: "string" }
+          - { label: "Validité (ex: jusqu'en septembre)", name: "validite", widget: "string" }
+          - { label: "Phrase d'accroche - ligne 1", name: "phrase_accroche_ligne_1", widget: "string" }
+          - { label: "Phrase d'accroche - ligne 2", name: "phrase_accroche_ligne_2", widget: "string" }
+          - { label: "Texte d'introduction", name: "intro", widget: "text" }
+
+          - label: "Entrées"
+            name: "entrees"
+            widget: "list"
+            summary: "{{fields.nom}}"
+            fields:
+              - { label: "Nom du plat (séparez les composants avec /)", name: "nom", widget: "string", hint: "Exemple : Asperges confites / tartare d'huîtres / mangue framboise" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Vin en accord (optionnel)", name: "accord_vin", widget: "string", required: false }
+              - { label: "Plat signature ?", name: "signature", widget: "boolean", default: false }
+
+          - label: "Plats"
+            name: "plats"
+            widget: "list"
+            summary: "{{fields.nom}}"
+            fields:
+              - { label: "Nom du plat", name: "nom", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Vin en accord (optionnel)", name: "accord_vin", widget: "string", required: false }
+              - { label: "Plat signature ?", name: "signature", widget: "boolean", default: false }
+
+          - label: "Desserts"
+            name: "desserts"
+            widget: "list"
+            summary: "{{fields.nom}}"
+            fields:
+              - { label: "Nom du dessert", name: "nom", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Vin en accord (optionnel)", name: "accord_vin", widget: "string", required: false }
+              - { label: "Dessert signature ?", name: "signature", widget: "boolean", default: false }
+
+          - label: "Options spéciales (héros en herbe, végan...)"
+            name: "options_speciales"
+            widget: "list"
+            summary: "{{fields.label}} — {{fields.nom}}"
+            required: false
+            fields:
+              - { label: "Type", name: "type", widget: "select", options: ["enfant", "vegan", "autre"] }
+              - { label: "Étiquette (ex: Plat des héros en herbe)", name: "label", widget: "string" }
+              - { label: "Icône (emoji)", name: "icone", widget: "string", required: false }
+              - { label: "Nom du plat", name: "nom", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Boisson en accord", name: "accord_boisson", widget: "string", required: false }
+
+
+  # ---------- 2. Les Vins ----------
+  - name: "vins"
+    label: "🍷 Les Vins"
+    files:
+      - file: "data/vins.json"
+        name: "vins"
+        label: "Carte des vins"
+        fields:
+          - { label: "Saison", name: "saison", widget: "string" }
+          - { label: "Phrase d'accroche - ligne 1", name: "phrase_accroche_ligne_1", widget: "string" }
+          - { label: "Phrase d'accroche - ligne 2", name: "phrase_accroche_ligne_2", widget: "string" }
+          - { label: "Texte d'introduction", name: "intro", widget: "text" }
+
+          - label: "Catégories de vins"
+            name: "categories"
+            widget: "list"
+            summary: "{{fields.nom}} ({{fields.vins.length}} cuvées)"
+            fields:
+              - { label: "ID (sans espace, ex: blancs)", name: "id", widget: "string" }
+              - { label: "Nom de la catégorie (ex: Blancs)", name: "nom", widget: "string" }
+              - label: "Cuvées"
+                name: "vins"
+                widget: "list"
+                summary: "{{fields.nom}}"
+                fields:
+                  - { label: "Nom du vin (avec / pour séparer cuvée et domaine)", name: "nom", widget: "string", hint: "Exemple : Tibo / Mas de Janiny" }
+                  - { label: "Appellation et infos (région, cépages, alcool, millésime)", name: "appellation", widget: "string" }
+                  - { label: "Prix au verre (ex: 6,00 €)", name: "prix_verre", widget: "string", required: false }
+                  - { label: "Prix à la bouteille (ex: 30,00 €)", name: "prix_bouteille", widget: "string", required: false }
+                  - { label: "Labels", name: "labels", widget: "select", multiple: true, required: false, options: ["BIO", "NATURE", "BIODYNAMIE"] }
+                  - { label: "Description / dégustation", name: "description", widget: "text" }
+                  - { label: "Coup de cœur du sommelier ?", name: "coup_de_coeur", widget: "boolean", default: false }
+
+
+  # ---------- 3. Évènements ----------
+  - name: "evenements"
+    label: "📅 Évènements"
+    files:
+      - file: "data/evenements.json"
+        name: "evenements"
+        label: "Liste des évènements"
+        fields:
+          - { label: "Phrase d'accroche - ligne 1", name: "phrase_accroche_ligne_1", widget: "string" }
+          - { label: "Phrase d'accroche - ligne 2", name: "phrase_accroche_ligne_2", widget: "string" }
+
+          - label: "Évènements"
+            name: "evenements"
+            widget: "list"
+            summary: "{{fields.titre}} — {{fields.date_jour}} {{fields.date_complement}}"
+            fields:
+              - { label: "Date principale (ex: 31, Sam., À venir)", name: "date_jour", widget: "string" }
+              - { label: "Complément de date (ex: Mai 2026, Chaque semaine)", name: "date_complement", widget: "string", required: false }
+              - { label: "Titre de l'évènement", name: "titre", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Statut affiché (ex: Sur réservation, Récurrent, Privatisation)", name: "statut", widget: "string" }
+              - { label: "Couleur du statut", name: "couleur_statut", widget: "select", options: ["orange-clair", "bleu", "orange"], default: "orange-clair" }
+
+
+  # ---------- 4. Infos pratiques ----------
+  - name: "infos"
+    label: "ℹ️ Infos pratiques"
+    files:
+      - file: "data/infos.json"
+        name: "infos"
+        label: "Informations générales"
+        fields:
+          - { label: "Nom du restaurant", name: "nom_restaurant", widget: "string" }
+          - { label: "Sous-titre", name: "sous_titre", widget: "string" }
+          - { label: "Ville", name: "ville", widget: "string" }
+          - { label: "Région", name: "region", widget: "string" }
+
+          - label: "Page d'accueil"
+            name: "accueil"
+            widget: "object"
+            fields:
+              - { label: "Phrase hero — ligne 1 (avant le mot en italique)", name: "phrase_hero_ligne_1_avant_em", widget: "string" }
+              - { label: "Phrase hero — ligne 1 (mot en italique)", name: "phrase_hero_ligne_1_em", widget: "string" }
+              - { label: "Phrase hero — ligne 1 (après le mot en italique)", name: "phrase_hero_ligne_1_apres_em", widget: "string" }
+              - { label: "Phrase hero — ligne 2 (avant)", name: "phrase_hero_ligne_2_avant_em", widget: "string" }
+              - { label: "Phrase hero — ligne 2 (italique)", name: "phrase_hero_ligne_2_em", widget: "string" }
+              - { label: "Phrase hero — ligne 2 (après)", name: "phrase_hero_ligne_2_apres_em", widget: "string" }
+              - { label: "Sous-titre", name: "sous_titre_hero", widget: "string" }
+
+              - { label: "Section Carte — étiquette", name: "section_carte_label", widget: "string" }
+              - { label: "Section Carte — titre", name: "section_carte_titre", widget: "string" }
+              - { label: "Section Carte — description", name: "section_carte_desc", widget: "string" }
+
+              - { label: "Section Vins — étiquette", name: "section_vins_label", widget: "string" }
+              - { label: "Section Vins — titre", name: "section_vins_titre", widget: "string" }
+              - { label: "Section Vins — description", name: "section_vins_desc", widget: "string" }
+
+              - { label: "Section Évènements — étiquette", name: "section_evenements_label", widget: "string" }
+              - { label: "Section Évènements — titre", name: "section_evenements_titre", widget: "string" }
+              - { label: "Section Évènements — description", name: "section_evenements_desc", widget: "string" }
+
+              - { label: "Histoire — date", name: "histoire_date", widget: "string" }
+              - { label: "Histoire — phrase d'intro", name: "histoire_intro", widget: "string" }
+              - { label: "Histoire — texte", name: "histoire_texte", widget: "text" }
+
+              - { label: "Pilier 1 — chiffre/mot", name: "pilier_1_chiffre", widget: "string" }
+              - { label: "Pilier 1 — étiquette", name: "pilier_1_label", widget: "string" }
+              - { label: "Pilier 1 — description", name: "pilier_1_desc", widget: "string" }
+
+              - { label: "Pilier 2 — chiffre/mot", name: "pilier_2_chiffre", widget: "string" }
+              - { label: "Pilier 2 — étiquette", name: "pilier_2_label", widget: "string" }
+              - { label: "Pilier 2 — description", name: "pilier_2_desc", widget: "string" }
+
+              - { label: "Pilier 3 — chiffre/mot", name: "pilier_3_chiffre", widget: "string" }
+              - { label: "Pilier 3 — étiquette", name: "pilier_3_label", widget: "string" }
+              - { label: "Pilier 3 — description", name: "pilier_3_desc", widget: "string" }
+
+              - { label: "Citation principale", name: "citation", widget: "text" }
+              - { label: "Complément de citation", name: "citation_complement", widget: "text" }
+
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Adresse - ligne 1", name: "adresse_ligne_1", widget: "string" }
+              - { label: "Adresse - ligne 2", name: "adresse_ligne_2", widget: "string" }
+              - { label: "Téléphone (affiché)", name: "telephone", widget: "string" }
+              - { label: "Téléphone (lien, format +33...)", name: "telephone_lien", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "URL d'intégration Google Maps (iframe src)", name: "google_maps_embed", widget: "string", required: false }
+
+          - label: "Horaires"
+            name: "horaires"
+            widget: "list"
+            summary: "{{fields.jour}} : {{fields.creneaux}}"
+            fields:
+              - { label: "Jour", name: "jour", widget: "string" }
+              - { label: "Créneaux (ex: 12h–14h · 19h–22h, ou Fermé)", name: "creneaux", widget: "string" }
+              - { label: "Fermé ce jour ?", name: "ferme", widget: "boolean", default: false }
+
+          - { label: "Résumé des horaires (affiché en page d'accueil)", name: "horaires_resume", widget: "string" }
+
+          - label: "Réseaux sociaux"
+            name: "reseaux"
+            widget: "object"
+            required: false
+            fields:
+              - { label: "Facebook (URL complète)", name: "facebook", widget: "string", required: false }
+              - { label: "Instagram (URL complète)", name: "instagram", widget: "string", required: false }

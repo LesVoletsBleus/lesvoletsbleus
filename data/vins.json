@@ -1,0 +1,162 @@
+{
+  "saison": "Été 2026",
+  "phrase_accroche_ligne_1": "Des cuvées vivantes,",
+  "phrase_accroche_ligne_2": "des vignerons qu'on aime.",
+  "intro": "Les prix indiqués correspondent au verre (12 cl) puis à la bouteille (75 cl). Tous nos vins contiennent des sulfites.",
+
+  "categories": [
+    {
+      "id": "blancs",
+      "nom": "Blancs",
+      "vins": [
+        {
+          "nom": "Tibo / Mas de Janiny",
+          "appellation": "Vin de France · Languedoc · 100 % Chardonnay · 13,5 % · 2025",
+          "prix_verre": "6,00 €",
+          "prix_bouteille": "30,00 €",
+          "labels": ["BIO", "NATURE"],
+          "description": "Robe pâle aux reflets dorés. Bouquet floral, pêche, agrume. Bouche fraîche et vivante, fruits blancs.",
+          "coup_de_coeur": false
+        },
+        {
+          "nom": "Folle Blanche / Domaine Günther-Chéreau",
+          "appellation": "AOP Gros Plant du Pays Nantais · Loire · 100 % Folle Blanche · 11 % · 2025",
+          "prix_verre": "6,00 €",
+          "prix_bouteille": "30,00 €",
+          "labels": [],
+          "description": "Vivace, fine, finale iodée et citronnée. Le compagnon naturel des huîtres.",
+          "coup_de_coeur": false
+        },
+        {
+          "nom": "Grands Penchants / Domaine Altugnac",
+          "appellation": "IGP Pays d'Oc · Languedoc-Roussillon · 100 % Chardonnay · 13 % · 2024",
+          "prix_verre": "6,00 €",
+          "prix_bouteille": "30,00 €",
+          "labels": [],
+          "description": "Robe dorée brillante. Pollen, mirabelle. Bouche ample, ronde, généreuse, fruits jaunes.",
+          "coup_de_coeur": false
+        },
+        {
+          "nom": "Taif / Domaine Fina",
+          "appellation": "IGP Terre Siciliane · Sicile · 100 % Zibibbo (Muscat d'Alexandrie) · 13 % · 2024",
+          "prix_verre": "7,00 €",
+          "prix_bouteille": "35,00 €",
+          "labels": [],
+          "description": "Très aromatique : pêche, mandarine, rose, glycine. Bouche ample, expressive, finale florale persistante.",
+          "coup_de_coeur": true
+        },
+        {
+          "nom": "Illico / Domaine des Schistes",
+          "appellation": "IGP Côtes Catalanes · Roussillon · 100 % Macabeu · 13 % · 2025",
+          "prix_verre": "6,00 €",
+          "prix_bouteille": "30,00 €",
+          "labels": ["BIO"],
+          "description": "Frais, fruité, agrumes et fruits blancs. Bouche souple, fraîcheur minérale, finale légère.",
+          "coup_de_coeur": false
+        }
+      ]
+    },
+    {
+      "id": "rouges",
+      "nom": "Rouges",
+      "vins": [
+        {
+          "nom": "Pinot Noir / Domaine de la Couperie",
+          "appellation": "IGP Val de Loire · 100 % Pinot Noir · 12,5 % · 2025",
+          "prix_verre": "5,50 €",
+          "prix_bouteille": "27,50 €",
+          "labels": [],
+          "description": "Robe grenat aux reflets cerise. Fruits rouges frais, griotte, framboise. Bouche légère, belle fraîcheur, tanins fins.",
+          "coup_de_coeur": false
+        },
+        {
+          "nom": "Les Voyageurs / Château Mourgues du Grès",
+          "appellation": "Vin de France · Costières de Nîmes · Montepulciano, Niellucciu · 12,5 % · 2024",
+          "prix_verre": "6,50 €",
+          "prix_bouteille": "32,50 €",
+          "labels": ["BIO", "BIODYNAMIE"],
+          "description": "Rubis clair, brillant. Fruits rouges frais, légère touche épicée. Bouche souple, tanins fins, finale fraîche et épicée.",
+          "coup_de_coeur": false
+        }
+      ]
+    },
+    {
+      "id": "orange",
+      "nom": "Orange",
+      "vins": [
+        {
+          "nom": "Tibo / Mas de Janiny",
+          "appellation": "Vin de France · Languedoc-Roussillon · Grenache blanc, Muscat, Viognier, Roussanne · 13 % · 2025",
+          "prix_verre": "6,50 €",
+          "prix_bouteille": "32,50 €",
+          "labels": ["BIO", "NATURE"],
+          "description": "Robe orange aux reflets dorés. Agrumes confits, abricot, notes florales. Bouche ample, texturée, tonique, délicate amertume finale.",
+          "coup_de_coeur": false
+        }
+      ]
+    },
+    {
+      "id": "roses",
+      "nom": "Rosés",
+      "vins": [
+        {
+          "nom": "Air de Rien / Château du Vieux Parc",
+          "appellation": "AOP Corbières · Languedoc · Grenache gris, Cinsault · 13 % · 2024",
+          "prix_verre": "6,00 €",
+          "prix_bouteille": "30,00 €",
+          "labels": [],
+          "description": "Robe rose lumineuse. Petits fruits rouges. Bouche souple, pointe minérale.",
+          "coup_de_coeur": false
+        },
+        {
+          "nom": "Solis Lumen / Domaine Montrose",
+          "appellation": "IGP Pays d'Oc · Languedoc · Grenache gris, Cinsault · 13 % · 2025",
+          "prix_verre": "6,00 €",
+          "prix_bouteille": "30,00 €",
+          "labels": [],
+          "description": "Rose pâle. Floral, notes d'agrumes. Bouche fraîche, ronde, délicate.",
+          "coup_de_coeur": false
+        }
+      ]
+    },
+    {
+      "id": "doux",
+      "nom": "Vins doux",
+      "vins": [
+        {
+          "nom": "Muscat de Rivesaltes / Domaine Boudau",
+          "appellation": "AOP Muscat de Rivesaltes · Roussillon · 100 % Muscat d'Alexandrie · 15,5 % · 2025",
+          "prix_verre": "6,50 € (8 cl)",
+          "prix_bouteille": "",
+          "labels": ["BIO"],
+          "description": "Jaune or. Citron, citronnelle, limoncello. Bouche fraîche tout en conservant la gourmandise du Muscat.",
+          "coup_de_coeur": false
+        },
+        {
+          "nom": "Rivesaltes Grenat / Domaine Boudau",
+          "appellation": "AOP Rivesaltes Grenat · Roussillon · 100 % Grenache noir · 16 % · 2024",
+          "prix_verre": "6,50 € (8 cl)",
+          "prix_bouteille": "",
+          "labels": ["BIO"],
+          "description": "Robe rubis profonde. Cerise noire, mûre, cacao. Bouche riche, gourmande, tanins fins, finale longue.",
+          "coup_de_coeur": false
+        }
+      ]
+    },
+    {
+      "id": "cidre",
+      "nom": "Cidre breton",
+      "vins": [
+        {
+          "nom": "Cidre « Blé noir » / Ferme du Beau Soleil",
+          "appellation": "Bretagne · pommes et sarrasin · 5 % · 2024",
+          "prix_verre": "5,50 €",
+          "prix_bouteille": "27,50 €",
+          "labels": ["BIO"],
+          "description": "Robe ambrée légèrement trouble, fine effervescence. Pomme intense, légère note de sarrasin. Bouche fraîche, fine amertume, finale sèche.",
+          "coup_de_coeur": false
+        }
+      ]
+    }
+  ]
+}

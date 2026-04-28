@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Les Volets Bleus</title>
+    <meta name="description" content="Nous contacter aux Volets Bleus à Fougères. Adresse, téléphone, email et horaires.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;1,400;1,500&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+
+    <nav class="site-nav" aria-label="Navigation principale">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">Les Volets Bleus</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="carte.html" class="nav-link">Carte</a>
+                <a href="vins.html" class="nav-link">Vins</a>
+                <a href="evenements.html" class="nav-link">Évènements</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+                <a href="reserver.html" class="nav-link nav-cta">Réserver</a>
+            </div>
+            <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="page-header-inner">
+            <p class="hero-eyebrow">— Nous trouver, nous joindre</p>
+            <h1 class="page-title">Au pied du <em>château.</em></h1>
+        </div>
+    </header>
+
+    <main class="page-content wide">
+
+        <div class="contact-grid">
+
+            <div>
+                <div class="contact-block">
+                    <p class="contact-label">Adresse</p>
+                    <p class="contact-value" id="contact-adresse">1 place Raoul II<br>35300 Fougères</p>
+                </div>
+
+                <div class="contact-block">
+                    <p class="contact-label">Téléphone</p>
+                    <p class="contact-value" id="contact-telephone"><a href="tel:+33244513152">02 44 51 31 52</a></p>
+                </div>
+
+                <div class="contact-block">
+                    <p class="contact-label">Email</p>
+                    <p class="contact-value contact-value-email" id="contact-email"><a href="mailto:lesvoletsbleus.bzh@gmail.com">lesvoletsbleus.bzh@gmail.com</a></p>
+                </div>
+
+                <div class="contact-block">
+                    <p class="contact-label">Horaires</p>
+                    <table class="hours-table" id="hours-table">
+                        <tbody>
+                            <tr><td colspan="2" class="loading-state">Chargement…</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="contact-map" id="contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2629.6!2d-1.2027!3d48.3528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sFougeres!5e0!3m2!1sfr!2sfr!4v1700000000000"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Plan d'accès Les Volets Bleus, Fougères">
+                </iframe>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div>
+                    <p class="footer-name">Les Volets Bleus</p>
+                    <p class="footer-tagline">Restaurant 100 % poissons<br>au cœur de Fougères, en Bretagne.</p>
+                    <p class="footer-mama">Une des <a href="https://lesmaisonsduchateau.pages.dev">Maisons du Château</a></p>
+                </div>
+                <div>
+                    <p class="footer-col-title">Le restaurant</p>
+                    <ul class="footer-list">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="carte.html">La Carte</a></li>
+                        <li><a href="vins.html">Les Vins</a></li>
+                        <li><a href="evenements.html">Évènements</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="footer-col-title">Pratique</p>
+                    <ul class="footer-list">
+                        <li><a href="reserver.html">Réserver</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="tel:+33244513152">02 44 51 31 52</a></li>
+                        <li><a href="mailto:lesvoletsbleus.bzh@gmail.com">Nous écrire</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="year">2026</span> Les Volets Bleus · Fougères</p>
+                <p>1 place Raoul II · 35300 Fougères</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

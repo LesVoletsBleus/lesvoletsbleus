@@ -1,0 +1,107 @@
+{
+  "saison": "Été 2026",
+  "validite": "jusqu'en septembre",
+  "phrase_accroche_ligne_1": "Une carte courte,",
+  "phrase_accroche_ligne_2": "une vraie envie.",
+  "intro": "« Précision et simplicité » — voilà ce qui guide chaque assiette. Les vins en accord sont nos suggestions, à découvrir au verre ou en bouteille.",
+
+  "entrees": [
+    {
+      "nom": "Asperges confites / tartare d'huîtres au furikake / mangue framboise",
+      "description": "Asperges blanches confites à l'huile d'olive, menthe, parmesan et zestes d'orange. Tartare d'huîtres au furikake et noisettes torréfiées. Mesclun à la vinaigrette de mangue et framboise, framboises fraîches.",
+      "accord_vin": "Tibo · Mas de Janiny — blanc nature",
+      "signature": false
+    },
+    {
+      "nom": "Langoustines à la flamme / légumes du moment / bouillon miso & ponzu",
+      "description": "Langoustines juste grillées, bouillon de têtes au miso blanc et ponzu, légumes du moment, mouillette de pain de mie au beurre d'escargot et compotée de tomates.",
+      "accord_vin": "Grands Penchants · Domaine Altugnac — blanc rond",
+      "signature": false
+    },
+    {
+      "nom": "Notre vitello tonnato / vierge de poivrons / gremolata",
+      "description": "Quasi de veau rôti et cuit en basse température, sauce tonnato, brunoise de poivrons à l'huile d'olive et zeste d'orange, copeaux de parmesan, câpres à queue, pignons de pin, gremolata, mesclun.",
+      "accord_vin": "Pinot Noir · Domaine de la Couperie — rouge léger",
+      "signature": false
+    },
+    {
+      "nom": "À compléter",
+      "description": "La quatrième entrée sera ajoutée prochainement.",
+      "accord_vin": "",
+      "signature": false
+    }
+  ],
+
+  "plats": [
+    {
+      "nom": "Rouget / lard confit 17h / coco de Paimpol",
+      "description": "Filet de rouget juste saisi, lit de coco de Paimpol, jus court au lard confit longuement et thym frais.",
+      "accord_vin": "Taif · Domaine Fina — blanc aromatique",
+      "signature": true
+    },
+    {
+      "nom": "Sandre / légumes verts / fumet betterave et navets",
+      "description": "Sandre basse température au beurre noisette et livèche, légumes verts glacés liés à la purée de petits pois, pickles de courgettes, fumet de betterave et navets au fond de volaille réduit.",
+      "accord_vin": "Taif · Domaine Fina — blanc aromatique",
+      "signature": false
+    },
+    {
+      "nom": "Grondin / risotto de kasha / fumet de Saint-Jacques",
+      "description": "Pavé de grondin rôti sur la peau, risotto de kasha aux noisettes et levure maltée, oignons grelots, fumet de bardes de Saint-Jacques à l'encre de seiche, chlorophylle de persil.",
+      "accord_vin": "Tibo · Mas de Janiny — orange nature",
+      "signature": false
+    },
+    {
+      "nom": "Pièce du boucher / pommes grenailles & enoki / sauce aux herbes",
+      "description": "Pièce du boucher selon arrivage, pommes de terre grenaille sautées au beurre, enoki snacké, sauce aux herbes.",
+      "accord_vin": "Les Voyageurs · Château Mourgues du Grès — rouge léger",
+      "signature": false
+    }
+  ],
+
+  "desserts": [
+    {
+      "nom": "Tout chocolat noir / noisettes / framboises",
+      "description": "Namelaka chocolat Valrhona 70 %, moelleux chocolat noir, streusel chocolat et noisettes, mousse chocolat fumé tiède au siphon, framboises.",
+      "accord_vin": "",
+      "signature": false
+    },
+    {
+      "nom": "Mille-feuille / vanille / sarrasin",
+      "description": "Mille-feuille de pâte feuilletée « à plat », chiboust à la vanille bretonne, praliné sarrasin, deux étages et kasha pop.",
+      "accord_vin": "",
+      "signature": false
+    },
+    {
+      "nom": "Lait ribot / granola / topping du jour",
+      "description": "Crème onctueuse au lait ribot, granola, topping du jour selon arrivage (caramel beurre salé, confiture de fruits, ananas à la menthe, poire framboise estragon zeste de citron…).",
+      "accord_vin": "",
+      "signature": false
+    },
+    {
+      "nom": "Coupe glacée bretonne",
+      "description": "Glace au sarrasin et miel local, glace à l'orge torréfié, glace à la vanille bretonne, chantilly au lait ribot, crumble de sablé breton maison, caramel beurre salé, chocolat tiède.",
+      "accord_vin": "Muscat de Rivesaltes · Domaine Boudau — vin doux naturel",
+      "signature": false
+    }
+  ],
+
+  "options_speciales": [
+    {
+      "type": "enfant",
+      "label": "Plat des héros en herbe",
+      "icone": "👶",
+      "nom": "Hachis parmentier / écrasé fumé / crème de pot-au-feu",
+      "description": "Hachis parmentier sur base de pot-au-feu maison, écrasé de pommes de terre au BBQ, purée de la garniture aromatique liée au fond de pot-au-feu réduit.",
+      "accord_boisson": "Jus de pomme maison"
+    },
+    {
+      "type": "vegan",
+      "label": "Plat végan",
+      "icone": "🌱",
+      "nom": "Bourguignon de champignons / carottes & oignons / purée maison",
+      "description": "Sauté de portobello, carottes et oignons nouveaux confits, purée maison de pommes de terre Allians, sauce bourguignonne végane.",
+      "accord_boisson": "Tibo · Mas de Janiny — orange nature"
+    }
+  ]
+}

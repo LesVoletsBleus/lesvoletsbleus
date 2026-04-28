@@ -1,0 +1,73 @@
+{
+  "nom_restaurant": "Les Volets Bleus",
+  "sous_titre": "Restaurant de poissons",
+  "ville": "Fougères",
+  "region": "Bretagne",
+
+  "accueil": {
+    "phrase_hero_ligne_1_avant_em": "Du poisson, ",
+    "phrase_hero_ligne_1_em": "précis",
+    "phrase_hero_ligne_1_apres_em": ",",
+    "phrase_hero_ligne_2_avant_em": "simple, et bien ",
+    "phrase_hero_ligne_2_em": "vivant",
+    "phrase_hero_ligne_2_apres_em": ".",
+    "sous_titre_hero": "Une nouvelle plume pour une maison fougeraise, depuis octobre 2025.",
+
+    "section_carte_label": "La Carte",
+    "section_carte_titre": "Carte d'été 2026.",
+    "section_carte_desc": "4 entrées, 4 plats, 4 desserts.",
+
+    "section_vins_label": "Les Vins",
+    "section_vins_titre": "Nature, bio, biodynamie.",
+    "section_vins_desc": "Des cuvées vivantes, des vignerons qu'on aime.",
+
+    "section_evenements_label": "Évènements",
+    "section_evenements_titre": "Samedi, retour du marché.",
+    "section_evenements_desc": "Les rendez-vous saisonniers de la maison.",
+
+    "histoire_date": "8 octobre 2025",
+    "histoire_intro": "Les Volets Bleus entrent dans une nouvelle ère.",
+    "histoire_texte": "Même nom, même adresse, même cadre — mais nouveau concept, nouveau chef, nouvelle équipe et une vision résolument tournée vers la mer.",
+
+    "pilier_1_chiffre": "100 %",
+    "pilier_1_label": "Poissons",
+    "pilier_1_desc": "(ou presque) — seul restaurant 100 % poissons de Fougères.",
+
+    "pilier_2_chiffre": "Local",
+    "pilier_2_label": "& frais",
+    "pilier_2_desc": "Produits frais et essentiellement locaux, au gré des arrivages.",
+
+    "pilier_3_chiffre": "Précis & simple",
+    "pilier_3_label": "Notre ligne",
+    "pilier_3_desc": "La précision dans le geste, la simplicité dans l'assiette.",
+
+    "citation": "Si la mer est notre fil conducteur, nous n'excluons pas les mariages terre et mer.",
+    "citation_complement": "Un bouillon de bœuf aux saveurs asiatiques pour souligner la finesse d'un poisson. Un lard confit 17 heures pour sublimer un rouget sur un lit de coco de Paimpol."
+  },
+
+  "contact": {
+    "adresse_ligne_1": "1 place Raoul II",
+    "adresse_ligne_2": "35300 Fougères",
+    "telephone": "02 44 51 31 52",
+    "telephone_lien": "+33244513152",
+    "email": "lesvoletsbleus.bzh@gmail.com",
+    "google_maps_embed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2629.6!2d-1.2027!3d48.3528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sFougeres!5e0!3m2!1sfr!2sfr!4v1700000000000"
+  },
+
+  "horaires": [
+    { "jour": "Lundi", "creneaux": "Fermé", "ferme": true },
+    { "jour": "Mardi", "creneaux": "Fermé", "ferme": true },
+    { "jour": "Mercredi", "creneaux": "12h–14h · 19h–22h", "ferme": false },
+    { "jour": "Jeudi", "creneaux": "12h–14h · 19h–22h", "ferme": false },
+    { "jour": "Vendredi", "creneaux": "12h–14h · 19h–22h", "ferme": false },
+    { "jour": "Samedi", "creneaux": "12h–14h · 19h–22h", "ferme": false },
+    { "jour": "Dimanche", "creneaux": "12h–16h", "ferme": false }
+  ],
+
+  "horaires_resume": "Mer–Sam · 12h–14h · 19h–22h · Dim · 12h–16h",
+
+  "reseaux": {
+    "facebook": "",
+    "instagram": ""
+  }
+}

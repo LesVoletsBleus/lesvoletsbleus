@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Vins — Les Volets Bleus</title>
+    <meta name="description" content="La carte des vins des Volets Bleus à Fougères : sélection vivante de vins choisis pour accompagner la cuisine de la mer.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;1,400;1,500&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="vins">
+
+    <nav class="site-nav" aria-label="Navigation principale">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">Les Volets Bleus</a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Accueil</a>
+                <a href="carte.html" class="nav-link">Carte</a>
+                <a href="vins.html" class="nav-link active">Vins</a>
+                <a href="evenements.html" class="nav-link">Évènements</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="reserver.html" class="nav-link nav-cta">Réserver</a>
+            </div>
+            <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="page-header-inner">
+            <p class="hero-eyebrow" id="vins-eyebrow">— Été 2026 · Notre cave</p>
+            <h1 class="page-title" id="vins-title-1">Des cuvées <em>vivantes</em>,</h1>
+            <h1 class="page-title" id="vins-title-2" style="margin-top: 4px;">des vignerons <em>qu'on aime.</em></h1>
+        </div>
+    </header>
+
+    <main class="page-content wide">
+
+        <p class="menu-intro-text" id="vins-intro" style="text-align: center; margin: 0 auto 2.5rem; max-width: 600px;">Les prix indiqués correspondent au verre puis à la bouteille.</p>
+
+        <!-- Filtres -->
+        <div class="vins-filtres" id="vins-filtres">
+            <p class="loading-state">Chargement des filtres…</p>
+        </div>
+
+        <!-- Catégories -->
+        <div id="vins-categories">
+            <p class="loading-state">Chargement de la cave…</p>
+        </div>
+
+        <p style="text-align: center; margin-top: 3rem; font-family: 'Fraunces', serif; font-style: italic; color: var(--bleu); font-size: 14px; opacity: 0.7; max-width: 600px; margin-left: auto; margin-right: auto;">
+            La carte évolue régulièrement. N'hésitez pas à demander conseil à notre équipe : nous prenons plaisir à raconter ce qu'il y a dans le verre.
+        </p>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div>
+                    <p class="footer-name">Les Volets Bleus</p>
+                    <p class="footer-tagline">Restaurant 100 % poissons<br>au cœur de Fougères, en Bretagne.</p>
+                    <p class="footer-mama">Une des <a href="https://lesmaisonsduchateau.pages.dev">Maisons du Château</a></p>
+                </div>
+                <div>
+                    <p class="footer-col-title">Le restaurant</p>
+                    <ul class="footer-list">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="carte.html">La Carte</a></li>
+                        <li><a href="vins.html">Les Vins</a></li>
+                        <li><a href="evenements.html">Évènements</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="footer-col-title">Pratique</p>
+                    <ul class="footer-list">
+                        <li><a href="reserver.html">Réserver</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="tel:+33244513152">02 44 51 31 52</a></li>
+                        <li><a href="mailto:lesvoletsbleus.bzh@gmail.com">Nous écrire</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="year">2026</span> Les Volets Bleus · Fougères</p>
+                <p>1 place Raoul II · 35300 Fougères</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
