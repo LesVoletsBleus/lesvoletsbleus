@@ -9,6 +9,8 @@ backend:
   name: github
   repo: LesVoletsBleus/lesvoletsbleus
   branch: main
+  base_url: https://decap-oauth.lesvoletsbleus-bzh.workers.dev
+  auth_endpoint: /auth
 
 # URL du site en ligne (utilisée pour les liens "Voir le site")
 site_url: https://lesvoletsbleus.pages.dev
