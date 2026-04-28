@@ -4,9 +4,9 @@
   "evenements": [
     {
       "date_jour": "Sam.",
-      "date_complement": "Chaque semaine",
+      "date_complement": "Chaque mois",
       "titre": "Samedi, retour du marché",
-      "description": "Le chef compose son menu après son tour au marché. Une assiette différente chaque semaine, fraîche par définition.",
+      "description": "Le chef compose son menu après son tour au marché. Une assiette plein d'iode.... Huitres, bigorneaux, bulots, araignée,.... Mayonnaise maison et muscadet sur lie",
       "statut": "Récurrent",
       "couleur_statut": "orange-clair"
     },
